@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Card = ({ gambar, title, desc, time }) => {
+const Card = ({ gambar, title, desc, time, cardClassname }) => {
   return (
     <>
-      <Link href={"/blog3"} className="h-auto w-[241px] bg-white">
+      <Link
+        href={"/blog"}
+        className={`h-auto w-[241px] bg-white ${cardClassname}`}
+      >
         <div>
           <Image
             className="h-[180px] w-full object-cover"

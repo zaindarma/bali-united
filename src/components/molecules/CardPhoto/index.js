@@ -7,7 +7,7 @@ const CardPhoto = ({ gambar, title, date, desc }) => {
     <>
       <div className="flex mt-[30px] px-4">
         <div className="lg:w-[500px] lg:h-[280px] relative">
-          <Link href="/blog2">
+          <Link href="/blog">
             <Image
               className="w-full h-full object-cover"
               src={gambar}
